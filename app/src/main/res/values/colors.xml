@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#3e9ddd</color>
+    <color name="tab_contact_unselected_color">#8bc4eb</color>
+
+    <color name="colorPrimary">@color/app_color</color>
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">@android:color/white</color>
+</resources>
