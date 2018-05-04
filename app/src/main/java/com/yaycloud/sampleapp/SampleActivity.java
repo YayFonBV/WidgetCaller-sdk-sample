@@ -59,9 +59,14 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                     }
 
                     @Override
-                    public void onLoadedAccountName(String name) {
-                        TextView accountNameView = findViewById(R.id.accountView);
-                        accountNameView.setText(name);
+                    public void onAccountAdded(boolean addedAccount, String accountName) {
+                        Log.d(TAG, "addedAccount - " + addedAccount + ", accountName - " + accountName);
+                        runOnUiThread(() -> {
+                            if (addedAccount) {
+                                TextView accountNameView = findViewById(R.id.accountView);
+                                accountNameView.setText(accountName);
+                            }
+                        });
                     }
                 });
 
