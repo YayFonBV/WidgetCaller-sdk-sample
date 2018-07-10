@@ -64,5 +64,5 @@ dependencies {
     implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
     implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
 
-    implementation 'com.yayfon:yayfon-widget-sdk-android:1.1'
+    implementation 'com.yayfon:yayfon-widget-sdk-android:1.2'
 }
